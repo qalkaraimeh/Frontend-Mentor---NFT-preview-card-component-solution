@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: Outfit;
+}
+.container {
+  display: grid;
+  place-content: center;
+}
+.card {
+  margin-top: 2.1rem;
+  width: 350px;
+  height: 550px;
+  padding: 20px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+}
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+}
+.card-title {
+  color: hsl(0, 0%, 100%);
+  margin-top: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+.card-text {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-weight: 300;
+}
+.price-time-flex {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.price {
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.eth-icon {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+.clock-icon {
+  margin-top: 5px;
+  margin-right: 6px;
+}
+.line {
+  border-bottom: 2px solid hsl(215, 32%, 27%);
+  margin-top: 0.8rem;
+}
+.card-footer {
+  margin-top: 10px;
+  display: flex;
+}
+.footer-img {
+  width: 40px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+.footer-text {
+  color: hsl(215, 51%, 70%);
+  margin-top: 10px;
+  margin-left: 12px;
+  font-weight: 400;
+}
+.author {
+  color: hsl(0, 0%, 100%);
+}
+
+.author:hover,
+.card-title:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+.onhover {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 15px;
+  display: grid;
+  place-content: center;
+  opacity: 0;
+}
+
+.onhover:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: rgba(0, 255, 247, 0.5);
+}
